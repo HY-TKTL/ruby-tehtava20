@@ -5,6 +5,10 @@ class Pino
     @pino = []
   end
 
+  def each(&block)
+    @pino.each(&block)
+  end
+
   def push(x)
     @pino.push(x)
   end
